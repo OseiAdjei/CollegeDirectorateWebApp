@@ -6,10 +6,10 @@ namespace CollegeDirectorate.Domain
     public class TeachingStaff : User
     {
         [Key]
-        public int StaffId { get; set; }
+        public int TeachingStaffId { get; set; }
 
         [Required]
-        public int StaffNumber { get; set; }
+        public int TeachingStaffNumber { get; set; }
 
         public List<Course_TeachingStaffJM> Courses_TeachingStaffJMs { get; set; }
         public int DepartmentId { get; set; }
